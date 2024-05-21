@@ -1,7 +1,7 @@
 .navbar{
     background-color: #1B0C4D;
     color:white;
-    padding: 10px;
+    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     border-radius: 0px 0px 40px 40px;
@@ -30,6 +30,11 @@
     margin: 3px;
 }
 
+.navbar-navigation{
+    display: flex;
+    align-items: center;
+}
+
 .navbar-navigation ul{
     display: flex;
     list-style: none;
@@ -39,10 +44,10 @@
 }
 
 .navbar-navigation ul li a{
-    margin: 0 10px;
+    margin: 0 7px;
     font-family: 'popins', sans-serif;
     font-size: 22px;
-    padding: 0px 1px;
+    padding: 0px 3px;
     text-decoration: none;
     color: white;
     padding-bottom: 3px;
@@ -51,4 +56,14 @@
 .navbar-navigation ul li a:hover{
     color: #1ff9f9b8;
     border-bottom:1px solid #1ff9f9b8;
+}
+
+@media(max-width :980px){
+    .navbar-links-container{
+        display: none;
+    }
+    .navbar-cognizance{
+        margin: 0px auto;
+        
+    }
 }
