@@ -36,14 +36,12 @@ export default function Navbar() {
                 </div>
                 <hr />
                 <div className="hidden-links">
-                    <ul>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/aboutus"> About Us </Link></li>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/events"> Events </Link></li>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/domains"> Domains </Link></li>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/alumini"> Alumini </Link></li>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/gallery"> Gallery </Link></li>
-                        <li className="navbar-link"> <Link onClick={handleResponsiveness} exact to="/contactus"> Contact Us </Link></li>
-                    </ul>
+                        <Link onClick={handleResponsiveness} exact to="/aboutus"><div> About Us </div></Link>
+                        <Link onClick={handleResponsiveness} exact to="/events"><div> Events </div></Link>
+                        <Link onClick={handleResponsiveness} exact to="/domains"><div> Domains </div></Link>
+                        <Link onClick={handleResponsiveness} exact to="/alumini"><div> Alumini </div></Link>
+                        <Link onClick={handleResponsiveness} exact to="/gallery"><div>  Gallery </div></Link>
+                        <Link onClick={handleResponsiveness} exact to="/contactus"><div> Contact Us </div></Link>
                 </div>
             </div>
             <div className="navbar">

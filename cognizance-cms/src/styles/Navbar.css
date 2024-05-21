@@ -12,6 +12,7 @@
     box-sizing: border-box;
     width:300px;
     padding: 12px 9px 0px;
+    border-radius: 0px 0px 40px 40px;
 }
 
 .hidden-heading{
@@ -31,19 +32,29 @@
     height: 36px;
 }
 
-.hidden-links ul{
-    list-style: none;
+.hidden-links{
     padding-left: 2px;
 }
 
-.hidden-links ul li{
-    margin-bottom: 3px;
-    padding: 6px 2px;
+.hidden-links div{
+    padding: 5px 10px;
 }
 
-.hidden-links ul li :hover{
+.hidden-links a{
+    color:white;
+    text-decoration: none;
+    margin: 0 7px;
+    font-family: 'popins', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.hidden-links div:hover{
     cursor: pointer;
+    display: block;
     border:1px solid #f0f3f6;
+    border-radius: 9px;
 }
 
 .navbar{
