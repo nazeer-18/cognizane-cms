@@ -1,3 +1,24 @@
+.responsive-nav{
+    display: none;
+}
+
+.responsive-nav-active{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    width:300px;
+    padding: 12px 9px;
+}
+
+.hidden-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar{
     background-color: #1B0C4D;
     color:white;
