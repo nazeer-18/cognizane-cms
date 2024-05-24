@@ -130,6 +130,19 @@
     border-bottom:1px solid #1ff9f9b8;
 }
 
+.sidenav-items{
+    display: flex;
+    align-items: center;
+    padding-left: 0px !important;
+}
+
+.sidenav-logo{
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    background-color: cyan;
+}
+
 @media(max-width :980px){
     .navbar-links-container{
         display: none;

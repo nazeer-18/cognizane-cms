@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 import logo from '../assets/cognizance-logo.png'
 import user from '../assets/user.svg'
+import Aboutus from '../assets/Aboutus.png'
+import Events from '../assets/Events.png'
+import Domains from '../assets/Domains.png'
+import Alumini from '../assets/Alumini.png'
+import Gallery from '../assets/Gallery.png'
 
 export default function Navbar() {
     const handleResponsiveness = () => {
@@ -36,12 +41,48 @@ export default function Navbar() {
                 </div>
                 <hr />
                 <div className="hidden-links">
-                        <Link onClick={handleResponsiveness} exact to="/aboutus"><div> About Us </div></Link>
-                        <Link onClick={handleResponsiveness} exact to="/events"><div> Events </div></Link>
-                        <Link onClick={handleResponsiveness} exact to="/domains"><div> Domains </div></Link>
-                        <Link onClick={handleResponsiveness} exact to="/alumini"><div> Alumini </div></Link>
-                        <Link onClick={handleResponsiveness} exact to="/gallery"><div>  Gallery </div></Link>
-                        <Link onClick={handleResponsiveness} exact to="/contactus"><div> Contact Us </div></Link>
+                        <Link onClick={handleResponsiveness} 
+                            exact to="/aboutus">
+                                <div className="sidenav-items"> 
+                                    <img src={Aboutus} className="sidenav-logo" alt="" /> 
+                                    About Us 
+                                </div>
+                        </Link>
+                        <Link onClick={handleResponsiveness}
+                            exact to="/events">
+                                <div className="sidenav-items"> 
+                                    <img src={Events} className="sidenav-logo" alt="" /> 
+                                    Events 
+                                </div>
+                        </Link>
+                        <Link onClick={handleResponsiveness}
+                            exact to="/domains">
+                                <div className="sidenav-items"> 
+                                    <img src={Domains} className="sidenav-logo" alt="" /> 
+                                    Domains 
+                                </div>
+                        </Link>
+                        <Link onClick={handleResponsiveness}
+                            exact to="/alumini">
+                                <div className="sidenav-items"> 
+                                    <img src={Alumini} className="sidenav-logo" alt="" /> 
+                                    Alumini 
+                                </div>
+                        </Link>
+                        <Link onClick={handleResponsiveness}
+                            exact to="/gallery">
+                                <div className="sidenav-items"> 
+                                    <img src={Gallery} className="sidenav-logo" alt="" /> 
+                                    Gallery 
+                                </div>
+                        </Link>
+                        <Link onClick={handleResponsiveness}
+                            exact to="/contactus">
+                                <div className="sidenav-items"> 
+                                    <img src={Gallery} className="sidenav-logo" alt="" /> 
+                                    Contact Us 
+                                </div>
+                        </Link>
                 </div>
             </div>
             <div className="navbar">
