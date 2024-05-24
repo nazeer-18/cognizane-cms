@@ -14,7 +14,9 @@ export default function Login() {
                     Welcome to Cognizance
                 </div>
                 <div className="login-title">
-                    Login
+                    <span>
+                        Login
+                    </span>
                 </div>
                 <div className="login-form">
                     <form action="">
