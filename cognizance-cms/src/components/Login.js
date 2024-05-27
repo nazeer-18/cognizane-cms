@@ -13,18 +13,18 @@ export default function Login() {
     });
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try{
+        try {
             const response = await userService.login(data);
             const success = response.data.success;
-            if(success){
-                setTimeout(()=>{
+            if (success) {
+                setTimeout(() => {
                     alert('Login Successful');
                     Navigate('/')
                 })
-            }else{
+            } else {
                 alert('Login Failed');
             }
-        }catch(err){
+        } catch (err) {
             console.log(err);
         }
     }
