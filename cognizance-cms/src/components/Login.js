@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../styles/Login.css'
 import coglogo from '../assets/cognizance-logo.png'
 import { Link } from 'react-router-dom'
+import userService from '../services/userService'
 
 export default function Login() {
+    const Navigate = useNavigate();
+    const [data, setData] = useState({
+        userName: '',
+        password: ''
+    });
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try{
+            const response = await userService.login(data);
+            const success = response.data.success;
+            if(success){
+                setTimeout(()=>{
+                    alert('Login Successful');
+                    Navigate('/')
+                })
+            }else{
+                alert('Login Failed');
+            }
+        }catch(err){
+            console.log(err);
+        }
+    }
     return (
         <div className="loginpage-container">
             <div className="login-image">
@@ -22,10 +46,23 @@ export default function Login() {
                     <form action="">
 
                         <div className="login-form-component">
-                            <input type="text" id="username" placeholder="Enter User Name" />
+                            <input
+                                type="text"
+                                id="username"
+                                placeholder="Enter User Name"
+                                onChange={(e) => {
+                                    setData({ ...data, userName: e.target.value })
+                                }} />
                         </div>
                         <div className="login-form-component">
-                            <input type="password" id="password" placeholder="Enter Password" />
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter Password"
+                                onChange={(e) => {
+                                    setData({ ...data, password: e.target.value })
+                                }}
+                            />
                         </div>
                         <div className="login-form-adds">
                             <div className="remember-me">
@@ -37,7 +74,9 @@ export default function Login() {
                             </div>
                         </div>
                         <div className="login-form-button">
-                            <button>Login</button>
+                            <button onClick={handleSubmit}>
+                                Login
+                            </button>
                         </div>
                     </form>
                 </div>

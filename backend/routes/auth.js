@@ -6,10 +6,12 @@ const User = require('../models/User');
 authRouter.post('/login',async (req,res)=>{
     try{
         const {userName,password} = req.body;
+        console.log(userName,password);
         const user = await User.findOne({
             userName : userName,
             password : password
         })
+        console.log(user);
         if(user){
             return res.status(200).json({success:true,message:'Login successful'});
         }

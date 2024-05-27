@@ -8,12 +8,14 @@ import Domains from './components/Domains'
 import Alumini from './components/Alumini'
 import Gallery from './components/Gallery'
 import ContactUs from './components/ContactUs'
+import HomePage from './components/HomePage.js'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/events" element={<Events/>} />

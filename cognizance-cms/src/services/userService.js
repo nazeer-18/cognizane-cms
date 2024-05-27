@@ -1,13 +1,13 @@
 import axios from 'axios';
-const serverUrl = 'http://localhost:3000';
+const serverUrl = 'http://localhost:8080';
 
-class userService{
-    register(data){
-        return axios.post(serverUrl + '/auth/register',data);
+class userService {
+    register(data) {
+        return axios.post(serverUrl + '/auth/register', data);
     }
-    login(data){
-        return axios.post(serverUrl + '/auth/login',data);
+    login(data) {
+        return axios.post(serverUrl + '/auth/login', data);
     }
 }
 
-export default userService;
+export default new userService();
