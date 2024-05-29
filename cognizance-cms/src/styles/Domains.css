@@ -1,0 +1,27 @@
+#domain-page-title{
+    font-family: 'popins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.domains-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:900px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.engage-joining{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'popins', sans-serif;
+    padding: 5px 10px;
+}
+
+.engage-joining p{
+    margin:8px;
+}

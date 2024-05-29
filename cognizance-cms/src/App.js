@@ -9,6 +9,7 @@ import Alumini from './components/Alumini'
 import Gallery from './components/Gallery'
 import ContactUs from './components/ContactUs'
 import HomePage from './components/HomePage.js'
+import Membership from './components/Membership.js'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/alumini" element={<Alumini/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/get-membership" element={<Membership />} />
       </Routes>
     </BrowserRouter>
   )

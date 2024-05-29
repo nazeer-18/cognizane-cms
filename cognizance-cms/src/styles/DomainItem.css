@@ -1,0 +1,37 @@
+#domain-item-container{
+    padding: 14px 24px;
+    border-radius: 15px 15px 40px 40px;
+    max-width:fit-content;
+    display: flex;
+    align-items: center;
+    margin: 14px;
+    background-color: white;
+    box-shadow: 4px 8px 10px 0 rgb(0 0 0 / 48%);
+}
+
+#domain-item-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #0b0837e0;
+
+}
+
+#domain-item-logo img{
+    width: 40px;
+    height:40px;
+}
+
+#domain-item-name{
+    font-family: 'popins', sans-serif;
+    font-size: 24px;
+    margin-left: 18px;
+}
+
+#domain-item-container:hover{
+    cursor: pointer;
+    background-color: #d1d1d18a;
+}
