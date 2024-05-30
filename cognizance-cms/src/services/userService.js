@@ -8,6 +8,13 @@ class userService {
     login(data) {
         return axios.post(serverUrl + '/auth/login', data);
     }
+    getDomains() {
+        return axios.get(serverUrl + '/domain/getDomains');
+    }
+    addDomain(data) {
+        return axios.post(serverUrl + '/domain/addDomain', data);
+    }
 }
 
-export default new userService();
+const userServiceInstance = new userService();
+export default userServiceInstance;
