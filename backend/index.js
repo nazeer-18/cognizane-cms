@@ -20,3 +20,6 @@ connectDB().then(() => {
 
 const authRouter = require('./routes/auth');
 app.use('/auth', authRouter);
+
+const domainRouter = require('./routes/domain');
+app.use('/domain', domainRouter);
