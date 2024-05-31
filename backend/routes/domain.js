@@ -12,6 +12,21 @@ domainRouter.get('/getDomains',async (req,res)=>{
     }
 })
 
+domainRouter.post('/getDomainById',async (req,res)=>{
+    try{
+        const domain = await Domain.findById(req.body.id);
+        if(domain){
+            res.status(200).json({domain,success:true, message:"Domain fetched successfully"});
+        }
+        else{
+            res.status(404).json({message:"Domain not found",success:false});
+        }
+    }
+    catch(err){
+        res.status(500).json({message:err.message,success:false});
+    }
+})
+
 domainRouter.post('/addDomain',async (req,res)=>{
     try{
         const domain = new Domain({

@@ -10,6 +10,7 @@ import Gallery from './components/Gallery'
 import ContactUs from './components/ContactUs'
 import HomePage from './components/HomePage.js'
 import Membership from './components/Membership.js'
+import DomainExplore from './components/DomainExplore.js'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/contactus" element={<ContactUs/>} />
         <Route path="/get-membership" element={<Membership />} />
+        <Route path="/domainExplore/:value" element={<DomainExplore />} />
       </Routes>
     </BrowserRouter>
   )

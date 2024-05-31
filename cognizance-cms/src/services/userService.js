@@ -14,6 +14,9 @@ class userService {
     addDomain(data) {
         return axios.post(serverUrl + '/domain/addDomain', data);
     }
+    getDomainById(id) {
+        return axios.post(serverUrl + '/domain/getDomainById', id);
+    }
 }
 
 const userServiceInstance = new userService();
