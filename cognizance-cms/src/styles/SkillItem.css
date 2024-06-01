@@ -1,0 +1,22 @@
+#skill-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width:120px;
+    margin: 10px;
+}
+
+#skill-img img{
+    width: 105px;
+    height:105px;
+}
+
+#skill-name{
+    margin: 2px;
+    padding: 2px;
+    font-size: 22px;
+    font-family: 'popins', sans-serif;
+}
