@@ -8,12 +8,16 @@ import Domains from './components/Domains'
 import Alumini from './components/Alumini'
 import Gallery from './components/Gallery'
 import ContactUs from './components/ContactUs'
+import HomePage from './components/HomePage.js'
+import Membership from './components/Membership.js'
+import DomainExplore from './components/DomainExplore.js'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/events" element={<Events/>} />
@@ -21,6 +25,8 @@ export default function App() {
         <Route path="/alumini" element={<Alumini/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/get-membership" element={<Membership />} />
+        <Route path="/domainExplore/:value" element={<DomainExplore />} />
       </Routes>
     </BrowserRouter>
   )

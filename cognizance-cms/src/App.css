@@ -1,0 +1,21 @@
+.cognizance-btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 15px;
+}
+
+.cognizance-btn{
+    color:white;
+    border: none;
+    background-color: #0b0837e0;
+    padding: 10px 15px;
+    margin: 5px auto;
+    font-size:20px;
+    font-family: 'roboto', sans-serif;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+a{
+    color:black;
+}

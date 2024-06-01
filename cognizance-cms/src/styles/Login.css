@@ -1,0 +1,152 @@
+.linear-txt{
+    color:#209DEB;
+}
+
+a{
+    text-decoration: none;
+}
+
+.loginpage-container{
+    height:88vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.login-image{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.login-image img{
+    width:350px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width:40vw;
+    min-width: 320px;
+}
+
+.welcome-msg{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.login-title{
+    font-size: 22px;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10px;
+    padding: 2px;
+    font-weight: 500;
+}
+
+.login-title span{
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.login-form-component{
+    margin-bottom: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.login-form-component input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login-form-component input::placeholder{
+    font-size: 15px;
+    color:black;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.login-form-adds{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin-top: -10px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.remember-me{
+    display: flex;
+    align-items: flex-end;
+    font-weight: 480;
+    justify-content: center;
+}
+
+.forgot-pwd span{
+    font-weight: 500;
+}
+
+.login-form-button{
+    margin-top: 10px;
+}
+
+.login-form-button button{
+    padding: 10px 20px;
+    border:none;
+    background-color: #209DEB;
+    border-radius: 8px;
+    color:white;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.new-signup{
+    text-align: right;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.new-signup span{
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+@media(max-width:850px){
+    .welcome-msg{
+        text-align: left;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:760px){
+    .loginpage-container{
+        align-content: flex-start;
+    }
+    .login-image img{
+        width:auto;
+    }
+}
+
+@media(min-height:1000px){
+    .loginpage-container{
+        align-content: flex-start;
+        padding-top: 100px;
+    }
+}
