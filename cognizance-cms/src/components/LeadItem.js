@@ -23,7 +23,7 @@ export default function LeadItem(){
                     <span>Mobile : 8309377933</span>
                 </div>
                 <div id="lead-email">
-                    <span>Email : shaiknazeer297@outlook.com</span>
+                    <div>Email&nbsp;:&nbsp;ch.en.u4cse21161@ch.students.amrita.edu</div>
                 </div>
             </div>  
         </div>

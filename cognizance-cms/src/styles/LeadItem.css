@@ -1,7 +1,7 @@
 #lead-item-container{
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 5px 10px;
     padding: 5px 10px;
 }
 
@@ -40,4 +40,9 @@
     font-size: 14px;
     margin: 3px 0;
     font-family: 'open sans', sans-serif;
+}
+
+#lead-email{
+    max-width:195px;
+    word-wrap: break-word;
 }

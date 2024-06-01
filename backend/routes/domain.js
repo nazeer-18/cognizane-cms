@@ -2,6 +2,7 @@ const express = require('express');
 const domainRouter = express.Router();
 const Domain = require('../models/Domain');
 
+//fetch all domains
 domainRouter.get('/getDomains',async (req,res)=>{
     try{
         const domains = await Domain.find({});
@@ -12,6 +13,7 @@ domainRouter.get('/getDomains',async (req,res)=>{
     }
 })
 
+//find domain by id
 domainRouter.post('/getDomainById',async (req,res)=>{
     try{
         const domain = await Domain.findById(req.body.id);
@@ -27,6 +29,8 @@ domainRouter.post('/getDomainById',async (req,res)=>{
     }
 })
 
+
+//add a domain
 domainRouter.post('/addDomain',async (req,res)=>{
     try{
         const domain = new Domain({
@@ -51,5 +55,25 @@ domainRouter.post('/addDomain',async (req,res)=>{
         res.status(500).json({message:err.message,success:false});
     }
 })
+
+//update a domain skills
+domainRouter.post('/updateDomainSkills',async (req,res)=>{
+    try{
+        const domain = await Domain.findById(req.body.id);
+        if(domain){
+            const domainSkills = req.body.domainSkills;
+            domain.domainSkills.push(domainSkills);
+            const updatedDomain = await domain.save();
+            res.status(200).json({updatedDomain,success:true, message:"Domain skills updated successfully"});
+        }
+        else{
+            res.status(404).json({message:"Domain not found",success:false});
+        }
+    }
+    catch(err){
+        res.status(500).json({message:err.message,success:false});
+    }
+})
+
 
 module.exports = domainRouter;

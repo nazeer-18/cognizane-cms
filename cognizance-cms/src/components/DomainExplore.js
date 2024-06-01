@@ -10,7 +10,8 @@ export default function DomainExplore(props) {
     const [domain, setDomain] = useState({
         domainName: '',
         domainLogo: '',
-        domainDescription: ''
+        domainDescription: '',
+        domainSkills: []
     })
     useEffect(() => {
         const getDomain = async () => {
@@ -20,7 +21,8 @@ export default function DomainExplore(props) {
                     setDomain({
                         domainName: res.data.domain.domainName,
                         domainLogo: res.data.domain.domainLogo,
-                        domainDescription: res.data.domain.domainDescription
+                        domainDescription: res.data.domain.domainDescription,
+                        domainSkills: res.data.domain.domainSkills
                     })
                 }
             }
@@ -67,10 +69,11 @@ export default function DomainExplore(props) {
                         Skills you can master in this domain
                     </p>
                     <div id="domain-skills-content">
-                        <SkillItem/>
-                        <SkillItem/>
-                        <SkillItem/>
-                        <SkillItem/>
+                        {
+                            domain.domainSkills.map((skill, index) => {
+                                return <SkillItem key={index} skill={skill} />
+                            })
+                        }
                     </div>
                 </div>
             </div>
