@@ -1,0 +1,43 @@
+#lead-item-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+#lead-identity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lead-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+}
+
+#lead-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+}
+
+#lead-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.23em;
+    margin: 5px 0;
+}
+
+#lead-post{
+    color:gray;
+    font-size: 0.9em;
+}
+
+#lead-domain{
+    color:#172B85;
+    font-size: 14px;
+    margin: 3px 0;
+    font-family: 'open sans', sans-serif;
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import userServices from '../services/userService'
 import '../styles/DomainExplore.css'
+import LeadItem from './LeadItem'
 import SkillItem from './Skillltem'
 
 export default function DomainExplore(props) {
@@ -55,7 +56,10 @@ export default function DomainExplore(props) {
                         Know your domain Leads!
                     </p>
                     <div id="domain-leads-content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore velit, sequi porro odit distinctio necessitatibus quis deserunt provident ex iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fuga quasi recusandae assumenda distinctio adipisci enim, suscipit aperiam porro ratione earum voluptate sapiente quod amet exercitationem illo deserunt saepe est?
+                        <LeadItem />
+                        <LeadItem />
+                        <LeadItem />
+                        <LeadItem />
                     </div>
                 </div>
                 <div id="domain-skills-container">
