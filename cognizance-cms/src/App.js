@@ -13,6 +13,7 @@ import Membership from './components/Membership.js'
 import DomainExplore from './components/DomainExplore.js'
 import ForgotPwd from './components/ForgotPwd.js'
 import ResetPwd from './components/ResetPwd.js'
+import Register from './components/Register.js'
 export default function App() {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/contactus" element={<ContactUs/>} />
         <Route path="/get-membership" element={<Membership />} />
+        <Route path="/signup" element={<Register />} />
         <Route path="/domainExplore/:value" element={<DomainExplore />} />
       </Routes>
     </BrowserRouter>
