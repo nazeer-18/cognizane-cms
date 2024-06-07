@@ -11,7 +11,8 @@ import ContactUs from './components/ContactUs'
 import HomePage from './components/HomePage.js'
 import Membership from './components/Membership.js'
 import DomainExplore from './components/DomainExplore.js'
-
+import ForgotPwd from './components/ForgotPwd.js'
+import ResetPwd from './components/ResetPwd.js'
 export default function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/resetpwd" element={<ResetPwd />} />
+        <Route path="/forgotpassword" element={<ForgotPwd />} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/events" element={<Events/>} />
         <Route path="/domains" element={<Domains/>} />
